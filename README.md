@@ -1,1 +1,3 @@
 # Interactive-Question-Answering-App
+
+Project 1 is an interactive application that lets you engage in a conversation with your documents. Imagine having a personal assistant who can instantly provide answers from a pile of documents you upload. Whether it's a PDF or a DOCX file, this application uses advanced AI, including Retrieval-Augmented Generation (RAG) and Large Language Models (LLMs), to understand your questions and fetch the relevant information from your documents. It's designed to save you time and effort by quickly retrieving the answers you need, without having to manually search through large volumes of text.

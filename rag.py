@@ -11,6 +11,10 @@ import docx
 from typing import List, Dict
 from langchain.globals import set_verbose, get_verbose
 
+__import__('pysqlite3')
+import sys
+sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
+
 set_verbose(True)  
 current_verbose = get_verbose()
 

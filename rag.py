@@ -29,13 +29,12 @@ class ChatDocument:
         self.text_splitter = RecursiveCharacterTextSplitter(chunk_size=1024, chunk_overlap=100)
         self.prompt = PromptTemplate.from_template(
             """
-            <s> [INST] You are an assistant for question-answering tasks. Use the following pieces of retrieved context 
-            to answer the question. If you don't know the answer, just say that you don't know. Use three sentences
-             maximum and keep the answer concise. [/INST] </s> 
-            [INST] Question: {question} 
-            Context: {context} 
+            <s> [INST] You are an assistant for question-answering tasks. Use the provided context to answer the question accurately. If unsure, acknowledge the uncertainty. Provide concise answers in three sentences or fewer. [/INST] </s>
+            [INST] Question: {question}
+            Context: {context}
             Answer: [/INST]
             """
+
         )
 
     def ingest_file(self, file_path: str, file_name: str) -> None:

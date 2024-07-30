@@ -25,7 +25,7 @@ class ChatDocument:
         self.vector_store = None
         self.retriever = None
         self.chain = None
-        self.model = ChatOllama(model="mistral")
+        self.model = ChatOllama(model="llama3.1")
         self.text_splitter = RecursiveCharacterTextSplitter(chunk_size=1024, chunk_overlap=100)
         self.prompt = PromptTemplate.from_template(
             """
